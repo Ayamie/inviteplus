@@ -12,4 +12,4 @@ client.on("message", message => {
     }
 })
 
-client.login(process.env.TOKEN); //paste your token here
+client.login(process.env.TOKEN);
