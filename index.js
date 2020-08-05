@@ -12,4 +12,4 @@ client.on("message", message => {
     }
 })
 
-client.login('NzI5ODU0MjQwNzA0NjkyMjU2.XwO_uw.gGVTy2iRlzUESHI_HgpQRNJrDmQ'); //paste your token here
+client.login(process.env.TOKEN); //paste your token here
