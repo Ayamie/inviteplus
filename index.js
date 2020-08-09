@@ -16,4 +16,5 @@ client.on("message", message => {
         message.channel.send('salut');
     }   
 })
+
 client.login(process.env.TOKEN);
