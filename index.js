@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "!";
 client.on("ready", message => {
-    console.log('salut je suis prêt');
+    console.log('salut je suis prêt')
 
 });
 
