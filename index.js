@@ -13,7 +13,9 @@ client.on("message", message => {
     }
     
     if(message.content === `salut`)
-        message.channel.send('salut');
+        message.channel.send('salut')
+    
+    }
 })
 
 client.login(process.env.TOKEN);
