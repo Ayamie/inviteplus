@@ -11,7 +11,7 @@ client.on("message", message => {
     }
         
     if(message.content === `salut`){
-        message.channel.send('<a:bloobedance:715248006596657212> salut');
+        message.channel.send('<a:mc:736946454228369503>salut');
     }
         
     if(message.content === `.help`){
