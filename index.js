@@ -38,5 +38,7 @@ client.on("message", message => {
     }
    if(message.content === `!help`){
        message.channel.send('music')
+    }
 })
+
 client.login(process.env.TOKEN);
