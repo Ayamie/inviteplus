@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "!";
+const prefix = ".";
 client.on("ready", message => {
     console.log('bot => ok');
 })
@@ -14,7 +14,7 @@ client.on("message", message => {
         message.channel.send('bonjour<a:valide:731232586411540552>');
     }
         
-    if(message.content === `!help`){
+    if(message.content === `.help`){
          var help = '!ping => pong !'
                      '!hello => bonjour!'
                      
@@ -29,14 +29,14 @@ client.on("message", message => {
         message.channel.send('ta mère la pute tu arrête <a:ban:736946398490001408>');
     }
 
-   if(message.content === `!nitro`){
+   if(message.content === `.nitro`){
       message.channel.send('1 invite = nitro classic  <a:emoji_55:739952349937664131>!');
     }
     
-   if(message.content === `!support`){
+   if(message.content === `.support`){
       message.channel.send('voici le lien du serveur support: https://discord.gg/fFUDPuZ');
     }
-   if(message.content === `!help`){
+   if(message.content === `.help`){
        message.channel.send('music')
     }
 })
