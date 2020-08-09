@@ -12,5 +12,4 @@ client.on("message", message => {
         message.channel.send(`🏓 pong - ${client.ws.ping}`)
     }
 })
-
 client.login(process.env.TOKEN);
