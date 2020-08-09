@@ -6,6 +6,7 @@ client.on("ready", message => {
 
 });
 
+
 client.on("message", message => {
     if(message.content === `${prefix}ping`) {
         message.channel.send(`🏓 pong - ${client.ws.ping}`)
