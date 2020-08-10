@@ -82,11 +82,11 @@ let embed = new Discord.MessageEmbed()
 .setTitle('🔧inviteMaster info🔧')
 .addField(
 	{ name: 'ANTI BOT', value: '`on`', inline: true },
-        { name: '\u200B', value: '\u200B' },
 	{ name: 'ANTI RÔLE', value: '`on`', inline: true },
 	{ name: 'ANTI MESSAGE BAN', value: '`on`', inline: true },
 	{ name: 'ANTI MESSAGE KICK', value: '`on`', inline: true },
 )
+.setImage('')
 .setFooter('inviteMaster', 'https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png'); 
 	
  message.channel.send(embed);
