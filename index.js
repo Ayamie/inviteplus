@@ -11,13 +11,10 @@ client.on("message", message => {
     }
         
     if(message.content === `salut`){
-        message.channel.send('<a:mc:736946454228369503>salut');
+        message.channel.send('<a:mc:736946454228369503> salut');
     }
         
-    if(message.content === `.help`){
-         var help = '!ping => pong !'
-                     '!hello => bonjour!'
-                     
+    
          message.channel.send(help)  
    } 
 
@@ -36,8 +33,17 @@ client.on("message", message => {
    if(message.content === `.support`){
       message.channel.send('voici le lien du serveur support: https://discord.gg/fFUDPuZ');
     }
-   if(message.content === `.help`){
-       message.channel.send('music')
+   if (message.content === `.help`){
+let embed = new Discord.MessageEmbed()
+.setTitle('voici mes commands .help') 
+.setDescription('<===Invitation==>')
+.addField('.help')
+.addField('**<===moderation==>**')
+.setThumbail('https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png')
+.setImage('https://cdn.discordapp.com/attachments/737388526848442459/742203445062271027/Discord_Infos-2.png')
+.setTimestamp()
+.setFooter('create by jordan');
+
     }
 })
 
