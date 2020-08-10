@@ -87,8 +87,9 @@ let embed = new Discord.MessageEmbed()
 	{ name: 'ANTI MESSAGE BAN', value: '`on`', inline: true },
 	{ name: 'ANTI MESSAGE KICK', value: '`on`', inline: true },
 )
-.setFooter('inviteMaster', 'https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png');  
+.setFooter('inviteMaster', 'https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png'); 
+	
  message.channel.send(embed);
-     }	
+   }	
 })
 client.login(process.env.TOKEN);
