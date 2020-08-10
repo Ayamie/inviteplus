@@ -1,10 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "!";
+const prefix = ".";
 client.on("ready", message => {
-    console.log('bot => ok');
+    console.log('bot => ok')
           
 })
+
 
 client.on("message", message => {
     if(message.content === `${prefix}ping`) {
@@ -15,7 +16,7 @@ client.on("message", message => {
         message.channel.send('bonjour<a:valide:731232586411540552>');
     }
         
-    if(message.content === `!help`){
+    if(message.content === `.help`){
          var help = '!ping => pong !'
                      '!hello => bonjour!'
                       'studio => la music'
@@ -31,12 +32,12 @@ client.on("message", message => {
         message.channel.send('ta mère la pute tu arrête <a:ban:736946398490001408>');
     }
 
-   if(message.content === `giveaway nitro`){
+   if(message.content === `.nitro`){
         message.channel.send('1 invite = nitro classic  <a:emoji_55:739952349937664131>!');
                              
     }
     
-if (message.content === "!embed"){
+if (message.content === ".embed"){
 let embed = new Discord.MessageEmbed()
 .setTitle('Hello! :)')
 .setDescription("**moderations**")
@@ -49,12 +50,12 @@ let embed = new Discord.MessageEmbed()
 message.channel.send(embed);
  
     }
-if(message.content === `!wl`){
+if(message.content === `.wl`){
     message.reply("vient d'avoir accès à inviteManager");
       
    }
       
-if (message.content === `!ticket`){
+if (message.content === `.ticket`){
 let embed = new Discord.MessageEmbed()
 .setTitle('') 
 .setDescription('username hello welcome in the team!')
@@ -62,7 +63,7 @@ let embed = new Discord.MessageEmbed()
 message.channel.send(embed);
 
    } 
-if (message.content === `!mod`){
+if (message.content === `.mod`){
 let embed = new Discord.MessageEmbed()
 .setTitle('voici mes commands !help') 
 .setDescription('<===Invitation==>')
@@ -76,19 +77,18 @@ message.channel.send(embed);
 
    }
    
- if(message.content === `.info`){
- if(message.content === `.info`)
+if(message.content === `.info`){
 let embed = new Discord.MessageEmbed()
 .setTitle('🔧inviteMaster info🔧')
 .addField(
 	{ name: 'ANTI BOT', value: '`on`', inline: true },
-  { name: '\u200B', value: '\u200B' },
+        { name: '\u200B', value: '\u200B' },
 	{ name: 'ANTI RÔLE', value: '`on`', inline: true },
 	{ name: 'ANTI MESSAGE BAN', value: '`on`', inline: true },
 	{ name: 'ANTI MESSAGE KICK', value: '`on`', inline: true },
 )
 .setFooter('inviteMaster', 'https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png');  
-    }
-
+ message.channel.send(embed);
+     }	
 })
 client.login(process.env.TOKEN);
