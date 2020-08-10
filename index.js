@@ -30,18 +30,17 @@ client.on("message", message => {
    if(message.content === `.support`){
       message.channel.send('voici le lien du serveur support: https://discord.gg/fFUDPuZ');
     }
-   if (message.content === `.help`){
+    
+if (message.content === `.help`){
 let embed = new Discord.MessageEmbed()
 .setTitle('voici mes commands .help') 
 .setDescription('<===Invitation==>')
-.addField('.help')
-.addField('**<===moderation==>**')
 .setThumbail('https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png')
 .setImage('https://cdn.discordapp.com/attachments/737388526848442459/742203445062271027/Discord_Infos-2.png')
 .setTimestamp()
 .setFooter('create by jordan');
 message.channel.send(embed);
+    
     }
 })
-
 client.login(process.env.TOKEN);
