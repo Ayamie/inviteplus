@@ -37,10 +37,10 @@ let embed = new Discord.MessageEmbed()
 .setDescription('<===Invitation==>')
 .setThumbnail('https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png')
 .addFields(
-		{ name: 'Regular field title', value: 'invite' },
+		{ name: 'invitation', value: 'invite' },
 		{ name: '\u200B', value: '\u200B' },
-		{ name: 'Inline field title', value: 'support', inline: true },
-		{ name: 'Inline field title', value: 'ban', inline: true },
+		{ name: 'serveur support', value: 'support', inline: true },
+		{ name: 'moderation', value: 'ban', inline: true },
 	)
 .setTimestamp()
 .setImage('https://cdn.discordapp.com/attachments/737388526848442459/742203445062271027/Discord_Infos-2.png')
