@@ -2,13 +2,12 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = ".";
 client.on("ready", message => {
-    console.log('bot => ok')
-          
+    console.log('bot => ok')         
 })
 
 
 client.on("message", message => {
-    if(message.content === `${prefix}ping`) {
+    if(message.content === `${prefix}ping`){
         message.channel.send(`🏓 pong - ${client.ws.ping}`)
     }
         
@@ -69,7 +68,7 @@ let embed = new Discord.MessageEmbed()
 .setDescription('<===Invitation==>')
 .addField('!help')
 .addField('**<===moderation==>**');
-.setImage('https://cdn.discordapp.com/attachments/719369502105665599/742136383329665044/c16009efd53f10bba79f19c683d53c3e.gif');
+.setImage('https://cdn.discordapp.com/attachments/719369502105665599/742136383329665044/c16009efd53f10bba79f19c683d53c3e.gif')
 .setTimestamp()
 .setFooter('create by jordan');
 
@@ -87,6 +86,7 @@ let embed = new Discord.MessageEmbed()
 	{ name: 'ANTI MESSAGE KICK', value: '`on`', inline: true },
 )
 .setImage('')
+.setTimestamp()
 .setFooter('inviteMaster', 'https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png'); 
 	
  message.channel.send(embed);
