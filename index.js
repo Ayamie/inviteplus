@@ -63,14 +63,13 @@ let embed = new Discord.MessageEmbed()
 message.channel.send(embed);
     }		
 // commande de stats
-    if (commande === "stats") {
-        let onlines = message.guild.members.cache.filter(({
-            presence
-        }) => presence.status !== 'offline').size;
-        let totalmembers = message.guild.members.cache.size;
-        let totalservers = bot.guilds.cache.size;
-        let totalbots = message.guild.members.cache.filter(member => member.user.bot).size;
-        let total_news = message.guild.roles.cache.get('ID_ROLE_DES_NOUVEAUX_MEMBRES').members.size;
+if (commande === "stats") {
+let onlines = message.guild.members.cache.filter(({
+presence}) => presence.status !== 'offline').size;
+let totalmembers = message.guild.members.cache.size;
+let totalservers = bot.guilds.cache.size;
+let totalbots = message.guild.members.cache.filter(member => member.user.bot).size;
+let total_news = message.guild.roles.cache.get('ID_ROLE_DES_NOUVEAUX_MEMBRES').members.size;
    }
 })
 client.login(process.env.TOKEN);
