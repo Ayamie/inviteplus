@@ -1,1 +1,2 @@
-# inviteplus
+# Start
+npm start
