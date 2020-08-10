@@ -62,8 +62,8 @@ let embed = new Discord.MessageEmbed()
 .setFooter('InviteMaster', 'https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png')
 message.channel.send(embed);
     }		
-// commande de stats
-if (commande === "stats") {
+
+if (message.content === `.stats`) {
 let onlines = message.guild.members.cache.filter(({
 presence}) => presence.status !== 'offline').size;
 let totalmembers = message.guild.members.cache.size;
