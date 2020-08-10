@@ -55,5 +55,12 @@ let embed = new Discord.MessageEmbed()
 message.channel.send(embed);
     
     }
+if(message.content === `.invite`){
+let embed = new Discord.MessageEmbed()
+.setTitle('ajouter le bot ')
+.setURL('https://discord.com/oauth2/authorize?client_id=739208885897920614&scope=bot&permissions=8')
+.setFooter('InviteMaster', 'https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png')
+message.channel.send(embed);
+    }		
 })
 client.login(process.env.TOKEN);
