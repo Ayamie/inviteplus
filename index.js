@@ -41,8 +41,15 @@ let embed = new Discord.MessageEmbed()
 		{ name: '\u200B', value: '\u200B' },
 		{ name: 'serveur support', value: 'support', inline: true },
 		{ name: 'moderation', value: 'ban', inline: true },
-	)
+        )
 .setTimestamp()
+.addFields(
+                { name: 'serveur support', value: 'support', inline: true },
+		{ name: '\u200B', value: '\u200B' },
+                { name: 'serveur support', value: 'support', inline: true },
+		{ name: 'moderation', value: 'ban', inline: true },
+	
+        )
 .setImage('https://cdn.discordapp.com/attachments/737388526848442459/742203445062271027/Discord_Infos-2.png')
 .setFooter('create by jordan');
 message.channel.send(embed);
