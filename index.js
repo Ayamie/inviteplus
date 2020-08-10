@@ -35,9 +35,9 @@ if (message.content === `.help`){
 let embed = new Discord.MessageEmbed()
 .setTitle('voici mes commands .help') 
 .setDescription('<===Invitation==>')
-.setThumbail('https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png')
-.setImage('https://cdn.discordapp.com/attachments/737388526848442459/742203445062271027/Discord_Infos-2.png')
+.setThumbnail('https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png')
 .setTimestamp()
+.setImage('https://cdn.discordapp.com/attachments/737388526848442459/742203445062271027/Discord_Infos-2.png')
 .setFooter('create by jordan');
 message.channel.send(embed);
     
