@@ -37,7 +37,7 @@ let embed = new Discord.MessageEmbed()
 .setDescription('<===Invitation==>')
 .setThumbnail('https://cdn.discordapp.com/attachments/737388526848442459/742203444919533668/images_14.png')
 .addFields(
-		{ name: 'invitation', value: 'invite' },
+		{ name: 'invitation', value: 'invité le bot dans votre serveur' },
 		{ name: '\u200B', value: '\u200B' },
 		{ name: 'serveur support', value: 'support', inline: true },
 		{ name: 'moderation', value: 'ban', inline: true },
@@ -46,8 +46,8 @@ let embed = new Discord.MessageEmbed()
 .addFields(
                 { name: 'serveur support', value: 'support', inline: true },
 		{ name: '\u200B', value: '\u200B' },
-                { name: 'serveur support', value: 'support', inline: true },
-		{ name: 'moderation', value: 'ban', inline: true },
+                { name:  'info', value: "permet d'avoir les informations de protection du serveur ", inline: true },
+		{ name: 'staff', value: 'permet de parler au staff', inline: true },
 	
         )
 .setImage('https://cdn.discordapp.com/attachments/737388526848442459/742203445062271027/Discord_Infos-2.png')
