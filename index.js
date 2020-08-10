@@ -2,21 +2,18 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = ".";
 client.on("ready", message => {
-    console.log('bot => ok');
-})
+    console.log('bot => ok')
+});
+
 
 client.on("message", message => {
-    if(message.content === `${prefix}ping`) {
+    if(message.content === `${prefix}ping`){
         message.channel.send(`🏓 pong - ${client.ws.ping}`)
     }
         
     if(message.content === `salut`){
         message.channel.send('<a:mc:736946454228369503> salut');
     }
-        
-    
-         message.channel.send(help)  
-   } 
 
    if(message.content === `tg`){
         message.channel.send('merci de ne pas insulter ');
@@ -43,7 +40,7 @@ let embed = new Discord.MessageEmbed()
 .setImage('https://cdn.discordapp.com/attachments/737388526848442459/742203445062271027/Discord_Infos-2.png')
 .setTimestamp()
 .setFooter('create by jordan');
-
+message.channel.send(embed);
     }
 })
 
