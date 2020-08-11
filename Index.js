@@ -9,8 +9,8 @@ client.on("ready", message => {
 
 client.on("message", message => {
     if(message.content === `${prefix}ping`) {
-        message.channel.send(`🏓 pong - ${client.ws.ping}`)
+        message.channel.send(`🏓 pong - ${client.ws.ping}`);
         
     }   
 })
-client.login(process.env.TOKEN); 
+client.login(process.env.BOT_TOKEN); 
